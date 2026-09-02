@@ -16,11 +16,16 @@
         <a href="contact.html">Contact</a>
         </nav>
 <h2>Volunteer Form</h2>
+<form id="contactForm"></form>
     <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
+         <span id="nameError" class="errormessage"></span>
+
         <label for="email">Email</label>
         <input type="email" id="email" name="email">
+        <span id="emailError" class="errormessage"></span>
+
         <label for="interest">Interest</label>
         <select id="interest" name="interest">
         <option value="volunteer">Volunteer Information</option>
@@ -33,6 +38,9 @@
         <textarea id="experience" name="experience"></textarea>
         <label for="message">Short Message</label>
         <textarea id="message" name="message"></textarea>
+        <span id="messageError" class="errormessage"></span>
+
+<button type="submit">Submit</button>
     </form>
 <h2>Service Area</h2>
     <p>Serving Greater Indianapolis and surrounding counties</p>

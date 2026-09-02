@@ -1,0 +1,11 @@
+body {font-family: Arial, sans-serif;background-color: #FAF8F3;color: #222222;}
+h1,h2,h3,h4 {font-family: Georgia, serif;}
+body > h1 {background-color: #3F5B45;color: white;}
+nav {background-color: #A8BFA3;}
+button {background-color: #D8C3A5;color: #222222;}
+img {max-width: 100%;height: auto;}
+@media (min-width: 700px) {
+nav {display: flex;gap: 15px;}}
+
+#nameError { color: red;} 
+#emailError {color: red;}
