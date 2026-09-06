@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Twin Cities Animal Rescue - About</title>
+    <title>Contact | Twin Cities Animal Rescue</title>
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -10,18 +12,40 @@
         <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
         </nav>
-    <h2>Organization Story</h2>
-    <p></p>
-        <h2>Values</h2>
-        <p>Having loving pets and families that care has been our pleasure for over 25 years in the Greater Indianapolis community.</p>
-        <h2>Acknowledgments</h2>
-        <p>We recongize all the families we serve and look forward to assising famailies and their pets when needed.</p>
-        <video controls>
-        <source src="rescue-message_c.mp4" type="video/mp4">
-        We are sorry, your current browser cannot play this video.
-        </video>
+<h2>Volunteer Form</h2>
+<form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-zÀ-ÿ' -]+"
+        title="Please enter letters only." required>
+         <span id="nameError" class="errormessage"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="errormessage"></span>
+
+        <label for="interest">Interest</label>
+        <select id="interest" name="interest">
+        <option value="volunteer">Volunteer Information</option>
+        <option value="foster">Foster Information</option>
+        <option value="adoption">Adoption Information</option>
+        </select>
+        <label for="availability">Availability</label>
+        <input type="text" id="availability" name="availability">
+        <label for="experience">Experience With Pets</label>
+        <textarea id="experience" name="experience"></textarea>
+        <label for="message">Short Message</label>
+        <textarea id="message" name="message"></textarea>
+        <span id="messageError" class="errormessage"></span>
+
+<button type="submit">Submit</button>
+    </form>
+<h2>Service Area</h2>
+    <p>Serving Greater Indianapolis and surrounding counties</p>
+<h2>Office Hours</h2>
+    <p>Monday - Friday 8:00AM to 5:00PM</p>
+
 </body>
 </html>
