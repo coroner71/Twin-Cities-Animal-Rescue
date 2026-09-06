@@ -1,5 +1,5 @@
 const petNames = ["Rey", "Bootsie", "Schuyler"];
-const buttons = document.querySelectorAll(".favoritebutton");q
+const buttons = document.querySelectorAll(".favoritebutton");
 for (let i = 0; i < buttons.length; i++) {buttons[i].addEventListener("click", function() 
     {
 savePet(petNames[i]);
